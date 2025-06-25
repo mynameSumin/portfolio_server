@@ -7,5 +7,6 @@ export const sendEmail = async (req, res) => {
     res.status(200).send("메일 전송 성공");
   } catch (err) {
     res.status(500).send("메일 전송 실패");
+    console.error(err);
   }
 };
